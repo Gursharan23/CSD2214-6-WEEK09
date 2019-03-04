@@ -4,9 +4,28 @@
     <meta charset="utf-8" />
     <title>week8</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js">
+        var addnumbers = {
+            sum=0,
+            startnumber = 1109,
+            stepdownnumber= 11,
+            endnumber = 119,
+            add: function () {
+                function sum() {
+                   
+                    for (counter = this.startnumber; counter > this.endnumber;counter-=this.stepdownnumber) {
+                        this.sum += counter;
+                    }
+                    return this.sum;
+                }
+            }
+        }
+        document.write(addnumbers.add());
+
+    </script>
+
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+
 </body>
 </html>
